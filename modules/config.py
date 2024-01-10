@@ -170,7 +170,7 @@ default_loras = get_config_item_or_set_default(
     key='default_loras',
     default_value=[
         [
-            "None",
+            "4ee2df15-54d5-412e-b265-da21c7bcf192.safetensors",
             1.0
         ],
         [
@@ -199,7 +199,7 @@ default_cfg_scale = get_config_item_or_set_default(
 )
 default_sample_sharpness = get_config_item_or_set_default(
     key='default_sample_sharpness',
-    default_value=2.0,
+    default_value=15,
     validator=lambda x: isinstance(x, numbers.Number)
 )
 default_sampler = get_config_item_or_set_default(
@@ -246,7 +246,7 @@ default_max_image_number = get_config_item_or_set_default(
 )
 default_image_number = get_config_item_or_set_default(
     key='default_image_number',
-    default_value=2,
+    default_value=7,
     validator=lambda x: isinstance(x, int) and 1 <= x <= default_max_image_number
 )
 checkpoint_downloads = get_config_item_or_set_default(
@@ -259,7 +259,6 @@ checkpoint_downloads = get_config_item_or_set_default(
 lora_downloads = get_config_item_or_set_default(
     key='lora_downloads',
     default_value={
-        "sd_xl_offset_example-lora_1.0.safetensors": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_offset_example-lora_1.0.safetensors",
         "4ee2df15-54d5-412e-b265-da21c7bcf192.safetensors": "https://huggingface.co/imagepipeline/DetailedEyes_XL/resolve/main/4ee2df15-54d5-412e-b265-da21c7bcf192.safetensors"
     },
     validator=lambda x: isinstance(x, dict) and all(isinstance(k, str) and isinstance(v, str) for k, v in x.items())
