@@ -214,11 +214,7 @@ default_scheduler = get_config_item_or_set_default(
 )
 default_styles = get_config_item_or_set_default(
     key='default_styles',
-    default_value=[
-        "Fooocus V2",
-        "Fooocus Enhance",
-        "Fooocus Sharp"
-    ],
+    default_value=[],
     validator=lambda x: isinstance(x, list) and all(y in modules.sdxl_styles.legal_style_names for y in x)
 )
 default_prompt_negative = get_config_item_or_set_default(
@@ -263,7 +259,8 @@ checkpoint_downloads = get_config_item_or_set_default(
 lora_downloads = get_config_item_or_set_default(
     key='lora_downloads',
     default_value={
-        "sd_xl_offset_example-lora_1.0.safetensors": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_offset_example-lora_1.0.safetensors"
+        "sd_xl_offset_example-lora_1.0.safetensors": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_offset_example-lora_1.0.safetensors",
+        "DetailedEyes_XL": "https://huggingface.co/imagepipeline/DetailedEyes_XL/resolve/main/4ee2df15-54d5-412e-b265-da21c7bcf192.safetensors"
     },
     validator=lambda x: isinstance(x, dict) and all(isinstance(k, str) and isinstance(v, str) for k, v in x.items())
 )
