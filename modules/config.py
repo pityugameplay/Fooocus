@@ -199,7 +199,7 @@ default_cfg_scale = get_config_item_or_set_default(
 )
 default_sample_sharpness = get_config_item_or_set_default(
     key='default_sample_sharpness',
-    default_value=2.0,
+    default_value=15,
     validator=lambda x: isinstance(x, numbers.Number)
 )
 default_sampler = get_config_item_or_set_default(
@@ -246,7 +246,7 @@ default_max_image_number = get_config_item_or_set_default(
 )
 default_image_number = get_config_item_or_set_default(
     key='default_image_number',
-    default_value=2,
+    default_value=7,
     validator=lambda x: isinstance(x, int) and 1 <= x <= default_max_image_number
 )
 checkpoint_downloads = get_config_item_or_set_default(
