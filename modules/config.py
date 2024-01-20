@@ -259,7 +259,22 @@ checkpoint_downloads = get_config_item_or_set_default(
 lora_downloads = get_config_item_or_set_default(
     key='lora_downloads',
     default_value={
-        "4ee2df15-54d5-412e-b265-da21c7bcf192.safetensors": "https://huggingface.co/imagepipeline/DetailedEyes_XL/resolve/main/4ee2df15-54d5-412e-b265-da21c7bcf192.safetensors"
+        "DetailedEyes_V3.safetensors": "https://civitai.com/api/download/models/145907",
+        "Bikini_02_lora.safetensors": "https://civitai.com/api/download/models/136277",
+        "RealNylonFeets_XL.safetensors": "https://www.civitai.com/api/download/models/192247",
+        "LeggingsXL_-_Latex.ID.safetensors": "https://www.civitai.com/api/download/models/199873",
+        "Perfect Hands v2.safetensors": "https://www.civitai.com/api/download/models/254267?type=Model&format=SafeTensor",
+        "perfect feet.safetensors": "https://www.civitai.com/api/download/models/225347?type=Model&format=SafeTensor",
+        # "gstr.safetensors": "https://civitai.com/api/download/models/166737",
+        # "MicroSkirt_XL.safetensors": "https://civitai.com/api/download/models/172294?type=Model&format=SafeTensor",
+        # "nobrav1_SDXL.safetensors": "https://civitai.com/api/download/models/151506?type=Model&format=SafeTensor",
+        # "edgApronXL.safetensors": "https://civitai.com/api/download/models/128396",
+        # "w3t_SDXL.safetensors": "https://civitai.com/api/download/models/152713?type=Model&format=SafeTensor",
+        # "handbrav3_SDXL.safetensors": "https://civitai.com/api/download/models/177308?type=Model&format=SafeTensor",
+        # "RealFeet_xl_v1.safetensors": "https://civitai.com/api/download/models/139194?type=Model&format=SafeTensor",
+        # "Sweaty_Realism_4-000006.safetensors": "https://civitai.com/api/download/models/302404?type=Model&format=SafeTensor",
+        # "RealPantyhose_XL.safetensors": "https://civitai.com/api/download/models/164714",
+        # "UnderboobXL.safetensors": "https://civitai.com/api/download/models/136168?type=Model&format=SafeTensor",
     },
     validator=lambda x: isinstance(x, dict) and all(isinstance(k, str) and isinstance(v, str) for k, v in x.items())
 )
