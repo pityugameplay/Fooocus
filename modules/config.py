@@ -271,6 +271,7 @@ lora_downloads = get_config_item_or_set_default(
         "MicroSkirt_XL.safetensors": "https://civitai.com/api/download/models/172294",
         "nobrav1_SDXL.safetensors": "https://civitai.com/api/download/models/151506",
         "seethruv3_SDXL": "https://civitai.com/api/download/models/175301",
+        "texta.safetensors": "https://civitai.com/api/download/models/249521?type=Model&format=SafeTensor",
 
         "Perfect Hands v2.safetensors": "https://drive.usercontent.google.com/download?id=1MTWwh8aARmqiFP5teCUMAiieFX_2m_kO&export=download&authuser=1&confirm=t&uuid=60802edb-54fd-49cb-8e2c-9eb6c2203f53&at=APZUnTX61hJhNKmIigHKDGSVCss8:1706401029209",
         "perfect feet.safetensors": "https://drive.usercontent.google.com/download?id=1SfgZKTXCeV9UpzNyQXyMR3Dbk8QI7mAZ&export=download&authuser=1&confirm=t&uuid=e7d2ceb5-3161-40aa-8f39-dc9db674ca86&at=APZUnTVy8nLBso7rPwkwOxmxtMBA:1706400511941",
