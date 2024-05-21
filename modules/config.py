@@ -253,7 +253,7 @@ checkpoint_downloads = get_config_item_or_set_default(
     key='checkpoint_downloads',
     default_value={
         "juggernautXL_version6Rundiffusion.safetensors": "https://huggingface.co/lllyasviel/fav_models/resolve/main/fav/juggernautXL_version6Rundiffusion.safetensors",
-        "sdxxxl_v30.safetensors": "https://drive.usercontent.google.com/download?id=1zbelIborfWCv4g3tF1cOJ4wlUCFJi3As&export=download&authuser=1&confirm=t&uuid=470624a6-0546-42af-bdfb-db267f3a9a87&at=APZUnTVumcx6V7owoYteSDdgJ4lP%3A1707583870938"
+        # "sdxxxl_v30.safetensors": "https://drive.usercontent.google.com/download?id=1zbelIborfWCv4g3tF1cOJ4wlUCFJi3As&export=download&authuser=1&confirm=t&uuid=470624a6-0546-42af-bdfb-db267f3a9a87&at=APZUnTVumcx6V7owoYteSDdgJ4lP%3A1707583870938"
         # "realisticVisionV60B1_v51VAE.safetensors": "https://civitai.com/api/download/models/130072?type=Model&format=SafeTensor&size=full&fp=fp16",
     },
     validator=lambda x: isinstance(x, dict) and all(isinstance(k, str) and isinstance(v, str) for k, v in x.items())
@@ -261,20 +261,20 @@ checkpoint_downloads = get_config_item_or_set_default(
 lora_downloads = get_config_item_or_set_default(
     key='lora_downloads',
     default_value={
-        "DetailedEyes_V3.safetensors": "https://civitai.com/api/download/models/145907",
-        "Bikini_02_lora.safetensors": "https://civitai.com/api/download/models/136277",
-        "LeggingsXL_-_Latex.ID.safetensors": "https://www.civitai.com/api/download/models/199873",
-        "gstr.safetensors": "https://civitai.com/api/download/models/166737",
-        "RealNylonFeets_XL.safetensors": "https://www.civitai.com/api/download/models/192247",
-        "RealPantyhose_XL.safetensors": "https://civitai.com/api/download/models/164714",
-        "UnderboobXL.safetensors": "https://civitai.com/api/download/models/136168",
-        "MicroSkirt_XL.safetensors": "https://civitai.com/api/download/models/172294",
-        "nobrav1_SDXL.safetensors": "https://civitai.com/api/download/models/151506",
-        "seethruv3_SDXL": "https://civitai.com/api/download/models/175301",
-        "texta.safetensors": "https://civitai.com/api/download/models/249521?type=Model&format=SafeTensor",
+        # "DetailedEyes_V3.safetensors": "https://civitai.com/api/download/models/145907",
+        # "Bikini_02_lora.safetensors": "https://civitai.com/api/download/models/136277",
+        # "LeggingsXL_-_Latex.ID.safetensors": "https://www.civitai.com/api/download/models/199873",
+        # "gstr.safetensors": "https://civitai.com/api/download/models/166737",
+        # "RealNylonFeets_XL.safetensors": "https://www.civitai.com/api/download/models/192247",
+        # "RealPantyhose_XL.safetensors": "https://civitai.com/api/download/models/164714",
+        # "UnderboobXL.safetensors": "https://civitai.com/api/download/models/136168",
+        # "MicroSkirt_XL.safetensors": "https://civitai.com/api/download/models/172294",
+        # "nobrav1_SDXL.safetensors": "https://civitai.com/api/download/models/151506",
+        # "seethruv3_SDXL": "https://civitai.com/api/download/models/175301",
+        # "texta.safetensors": "https://civitai.com/api/download/models/249521?type=Model&format=SafeTensor",
 
-        "Perfect Hands v2.safetensors": "https://drive.usercontent.google.com/download?id=1MTWwh8aARmqiFP5teCUMAiieFX_2m_kO&export=download&authuser=1&confirm=t&uuid=60802edb-54fd-49cb-8e2c-9eb6c2203f53&at=APZUnTX61hJhNKmIigHKDGSVCss8:1706401029209",
-        "perfect feet.safetensors": "https://drive.usercontent.google.com/download?id=1SfgZKTXCeV9UpzNyQXyMR3Dbk8QI7mAZ&export=download&authuser=1&confirm=t&uuid=e7d2ceb5-3161-40aa-8f39-dc9db674ca86&at=APZUnTVy8nLBso7rPwkwOxmxtMBA:1706400511941",
+        # "Perfect Hands v2.safetensors": "https://drive.usercontent.google.com/download?id=1MTWwh8aARmqiFP5teCUMAiieFX_2m_kO&export=download&authuser=1&confirm=t&uuid=60802edb-54fd-49cb-8e2c-9eb6c2203f53&at=APZUnTX61hJhNKmIigHKDGSVCss8:1706401029209",
+        # "perfect feet.safetensors": "https://drive.usercontent.google.com/download?id=1SfgZKTXCeV9UpzNyQXyMR3Dbk8QI7mAZ&export=download&authuser=1&confirm=t&uuid=e7d2ceb5-3161-40aa-8f39-dc9db674ca86&at=APZUnTVy8nLBso7rPwkwOxmxtMBA:1706400511941",
 
         # "RealFeet_xl_v1.safetensors": "https://civitai.com/api/download/models/139194",
         # "edgApronXL.safetensors": "https://civitai.com/api/download/models/128396",
