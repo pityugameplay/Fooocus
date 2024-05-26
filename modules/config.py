@@ -253,7 +253,7 @@ checkpoint_downloads = get_config_item_or_set_default(
     key='checkpoint_downloads',
     default_value={
         "juggernautXL_version6Rundiffusion.safetensors": "https://huggingface.co/lllyasviel/fav_models/resolve/main/fav/juggernautXL_version6Rundiffusion.safetensors",
-        # "sdxxxl_v30.safetensors": "https://drive.usercontent.google.com/download?id=1zbelIborfWCv4g3tF1cOJ4wlUCFJi3As&export=download&authuser=1&confirm=t&uuid=470624a6-0546-42af-bdfb-db267f3a9a87&at=APZUnTVumcx6V7owoYteSDdgJ4lP%3A1707583870938"
+        "sdxxxl_v30.safetensors": "https://drive.usercontent.google.com/download?id=1zbelIborfWCv4g3tF1cOJ4wlUCFJi3As&export=download&authuser=1&confirm=t&uuid=470624a6-0546-42af-bdfb-db267f3a9a87&at=APZUnTVumcx6V7owoYteSDdgJ4lP%3A1707583870938"
         # "realisticVisionV60B1_v51VAE.safetensors": "https://civitai.com/api/download/models/130072?type=Model&format=SafeTensor&size=full&fp=fp16",
     },
     validator=lambda x: isinstance(x, dict) and all(isinstance(k, str) and isinstance(v, str) for k, v in x.items())
@@ -261,10 +261,10 @@ checkpoint_downloads = get_config_item_or_set_default(
 lora_downloads = get_config_item_or_set_default(
     key='lora_downloads',
     default_value={
+        "gstr.safetensors": "https://civitai.com/api/download/models/166737",
         # "DetailedEyes_V3.safetensors": "https://civitai.com/api/download/models/145907",
         # "Bikini_02_lora.safetensors": "https://civitai.com/api/download/models/136277",
         # "LeggingsXL_-_Latex.ID.safetensors": "https://www.civitai.com/api/download/models/199873",
-        # "gstr.safetensors": "https://civitai.com/api/download/models/166737",
         # "RealNylonFeets_XL.safetensors": "https://www.civitai.com/api/download/models/192247",
         # "RealPantyhose_XL.safetensors": "https://civitai.com/api/download/models/164714",
         # "UnderboobXL.safetensors": "https://civitai.com/api/download/models/136168",
