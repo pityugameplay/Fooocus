@@ -4,6 +4,7 @@ import json
 
 from modules.util import get_files_from_folder
 
+count = 0
 
 # cannot use modules.config - validators causing circular imports
 styles_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../sdxl_styles/'))
@@ -67,11 +68,13 @@ def apply_wildcards(wildcard_text, rng, directory=wildcards_path):
 
         print(f'[Wildcards] processing: {wildcard_text}')
         for placeholder in placeholders:
+
             try:
                 words = open(os.path.join(directory, f'{placeholder}.txt'), encoding='utf-8').read().splitlines()
                 words = [x for x in words if x != '']
                 assert len(words) > 0
-                wildcard_text = wildcard_text.replace(f'__{placeholder}__', rng.choice(words), 1)
+                wildcard_text = wildcard_text.replace(f'__{placeholder}__', count, 1)
+                count += 1
             except:
                 print(f'[Wildcards] Warning: {placeholder}.txt missing or empty. '
                       f'Using "{placeholder}" as a normal word.')
