@@ -73,7 +73,7 @@ def apply_wildcards(wildcard_text, rng, directory=wildcards_path):
                 words = open(os.path.join(directory, f'{placeholder}.txt'), encoding='utf-8').read().splitlines()
                 words = [x for x in words if x != '']
                 assert len(words) > 0
-                wildcard_text = wildcard_text.replace(f'__{placeholder}__', count, 1)
+                wildcard_text = wildcard_text.replace(f'__{placeholder}__', words[count], 1)
                 count += 1
             except:
                 print(f'[Wildcards] Warning: {placeholder}.txt missing or empty. '
